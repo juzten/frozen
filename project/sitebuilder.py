@@ -6,7 +6,7 @@ from flask_flatpages import FlatPages
 from flask_frozen import Freezer
 
 APP_DIR = os.path.dirname(os.path.abspath(__file__))
-REPO_NAME = 'https://github.com/juzten/frozen/'
+REPO_NAME = 'frozen'
 def parent_dir(path):
     '''Return the parent of a directory.'''
     return os.path.abspath(os.path.join(path, os.pardir))
