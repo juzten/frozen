@@ -6,7 +6,7 @@ from flask_flatpages import FlatPages
 from flask_frozen import Freezer
 
 APP_DIR = os.path.dirname(os.path.abspath(__file__))
-
+REPO_NAME = 'https://github.com/juzten/frozen/'
 def parent_dir(path):
     '''Return the parent of a directory.'''
     return os.path.abspath(os.path.join(path, os.pardir))
@@ -18,7 +18,7 @@ FREEZER_DESTINATION = PROJECT_ROOT
 FREEZER_REMOVE_EXTRA_FILES = False
 FLATPAGES_MARKDOWN_EXTENSIONS = ['codehilite']
 FLATPAGES_ROOT = os.path.join(APP_DIR, 'pages')
-
+FREEZER_BASE_URL = "http://localhost/{0}".format(REPO_NAME)
 DEBUG = True
 FLASTPAGES_AUTO_RELOAD = DEBUG
 FLATPAGES_EXTENSION = '.md'
