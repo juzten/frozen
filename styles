@@ -64,6 +64,18 @@
 </ul>
       
     </div>
+
+    <div class="form-fields paper-area">
+      <span class="paper-title">paper-title</span><br>
+      <span class="paper-subtitle">paper-subtitle</span>
+      <div class="box-area">box-area</div>
+
+      <div class="error-message">error-message</div>
+      <div class="code">code</div>
+      <p class="fine-print">
+        *This is the fine print.
+      </p>
+    </div>
   </div>
 
   </main>
