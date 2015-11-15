@@ -25,6 +25,7 @@ FREEZER_BASE_URL = "http://localhost/{0}".format(REPO_NAME)
 DEBUG = True
 FLASTPAGES_AUTO_RELOAD = DEBUG
 FLATPAGES_EXTENSION = '.md'
+FREEZER_BASE_URL = ''
 
 app = Flask(__name__)
 app.config.from_object(__name__)

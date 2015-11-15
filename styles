@@ -2,12 +2,12 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="/frozen/static/css/style.css" type="text/css" />
+  <link rel="stylesheet" href="/static/css/style.css" type="text/css" />
   <title>My site</title>
 </head>
 <body>
   <main role="main">
-    <h1><a href="/frozen/">My site</a></h1>
+    <h1><a href="/">My site</a></h1>
     
   <div class="container">
     <header class="page-header">
@@ -19,43 +19,43 @@
         <ul>
 
     <li>
-        <a href="/frozen/hello-world/">Hello World dudes</a>
+        <a href="/hello-world/">Hello World dudes</a>
     
         | Tagged:
         
-            <a href="/frozen/tag/general/">general</a>
+            <a href="/tag/general/">general</a>
         
-            <a href="/frozen/tag/awesome/">awesome</a>
+            <a href="/tag/awesome/">awesome</a>
         
-            <a href="/frozen/tag/stuff/">stuff</a>
+            <a href="/tag/stuff/">stuff</a>
         
         <hr>
     
     </li>
 
     <li>
-        <a href="/frozen/code/">code</a>
+        <a href="/code/">code</a>
     
         | Tagged:
         
-            <a href="/frozen/tag/code/">code</a>
+            <a href="/tag/code/">code</a>
         
-            <a href="/frozen/tag/python/">python</a>
+            <a href="/tag/python/">python</a>
         
-            <a href="/frozen/tag/stuff/">stuff</a>
+            <a href="/tag/stuff/">stuff</a>
         
         <hr>
     
     </li>
 
     <li>
-        <a href="/frozen/bacon/">Bacon Ipsum</a>
+        <a href="/bacon/">Bacon Ipsum</a>
     
         | Tagged:
         
-            <a href="/frozen/tag/bacon/">bacon</a>
+            <a href="/tag/bacon/">bacon</a>
         
-            <a href="/frozen/tag/stuff/">stuff</a>
+            <a href="/tag/stuff/">stuff</a>
         
         <hr>
     
