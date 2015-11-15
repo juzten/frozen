@@ -1,7 +1,7 @@
-# Frozen Flask + Github Pages Example
+# Frozen Flask Blog
 
-How to make static sites with [Flask][] and deploy them for free on [Github Pages][].
 
+## Up and running
 ```
 $ pip install -r requirements.txt
 # Run local server
