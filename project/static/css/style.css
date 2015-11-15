@@ -1,0 +1,118 @@
+/*
+    yellow: #FFFC72
+    red: #FF1621
+    blue: #5DA4CC
+    lightish grey: #A1ACB2
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: proxima-nova, 'Open Sans', Helvetica, sans-serif;
+    text-align: center;
+    background: #F3F4F6;
+    color: #2F4856;
+    border-top: 5px solid #5DA4CC;
+}
+
+a {
+    color: #5DA4CC;
+}
+
+.page-header {
+    margin: 4rem 0;
+}
+
+.page-header .description {
+    color: #40454F;
+    font-family: proxima-nova, 'Open Sans', Helvetica, sans-serif;
+    font-size: 28px;
+    font-weight: lighter;
+}
+
+.hidden {
+    display: none;
+}
+
+.paper-area {
+    box-sizing: border-box;
+    margin: 3rem auto;
+    width: 800px;
+    padding: 3rem;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(33,40,51,0.12),0 1px 2px rgba(33,40,51,0.24);
+    background: white;
+}
+.paper-area hr {
+    display: block;
+    margin: 2rem 0;
+    padding: 0;
+    height: 1px;
+    background: #f8f8f8;
+    border: none;
+}
+.paper-title {
+    color: #40454F;
+    font-family: proxima-nova, 'Open Sans', Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 20px;
+}
+.paper-subtitle {
+    color: black;
+    font-family: proxima-nova, 'Open Sans', Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.box-area {
+    display: block;
+    margin: 1rem auto;
+    padding: 0 10px;
+    width: 65%;
+    line-height: 34px;
+    font-family: proxima-nova, 'Open Sans', Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 12px;
+    background: white;
+    border: 1px solid #b8bcc2;
+    border-radius: 3px;
+    -webkit-transition: border-color 100ms;
+    transition: border-color 100ms;
+}
+
+.error-message {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: stretch;
+    align-items: stretch;
+    margin: 1.5rem 0;
+    font-family: proxima-nova, 'Open Sans', Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 1rem;
+    white-space: pre-line;
+    text-align: left;
+    color: #40454f;
+    background: #fde5e6; /* EMMA COLOR: blam-400 */
+    border: 1px solid #cf504c;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.fine-print {
+    font-size: 0.8rem;
+    color: #808080;
+    text-decoration: none;
+}
+.code {
+    display: inline-block;
+    margin: 1rem;
+    padding: 1rem 2rem;
+    font-family: monospace;
+    font-size: 1.2rem;
+    background: #f8f8f8;
+    border: 1px solid #f0f0f0;
+}
+
+li {
+    list-style-type: none;
+}
