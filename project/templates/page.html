@@ -1,6 +1,10 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h2>{{ page.title }}</h2>
-    {{ page.html|safe }}
+  <div class="container">
+    <div class="form-fields paper-area">
+      <h2>{{ page.title }}</h2>
+      {{ page.html|safe }}
+    </div>
+  </div>
 {% endblock content %}
