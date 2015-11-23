@@ -1,6 +1,6 @@
 title: code
-date: 2013-07-14 12:00:00
-tags: [code, python, stuff]
+date: 2015-11-23 12:00:00
+tags: [code, python]
 
 **Code**, go *where*?
 
@@ -8,8 +8,3 @@ tags: [code, python, stuff]
 
     s = "Python syntax highlighting"
     print s
-
-
-> And block quotes
-
-    And event highlighted code if you indent :)
