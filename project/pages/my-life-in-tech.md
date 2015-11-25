@@ -1,6 +1,7 @@
-title: My Life In Tech
+title: "My Life In Tech"
 tags: [life, tech, about]
 date: 2013-12-27
+lastmod: 2015-11-25
 description: "What this blog is about"
 ### Woot Woot!! First post using jekyll
 

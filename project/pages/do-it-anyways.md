@@ -1,5 +1,6 @@
-title: Do It Anyways
+title: "Do It Anyways"
 date: 2014-02-14
+lastmod: 2015-11-25
 tags: [hackathon]
 description: "Fun at a hackathon"
 

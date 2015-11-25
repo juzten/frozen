@@ -1,5 +1,6 @@
 title: "Chatype All The Things"
 date: 2015-07-11
+lastmod: 2015-11-25
 tags: [chatype, font, chadev, chrome, extension]
 description: "Encounters with building chrome extensions"
 

@@ -1,5 +1,6 @@
 title: "code"
-date: 2015-11-23 12:00:00
+date: 2015-11-23
+lastmod: 2015-11-25
 tags: [code, python]
 description: "Example of writting code with markdown"
 
