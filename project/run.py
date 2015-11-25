@@ -4,12 +4,13 @@
 import sys
 import os
 import flask
-from flask import Flask, render_template, render_template_string
-from flask_flatpages import FlatPages, pygments_style_defs
+from flask import Flask, render_template, render_template_string, Markup
+from flask_flatpages import FlatPages, pygments_style_defs, pygmented_markdown
 from flask_flatpages import pygmented_markdown
 from flask_frozen import Freezer
 import pygments
 from pygments import highlight
+import pygments.formatters
 
 APP_DIR = os.path.dirname(os.path.abspath(__file__))
 REPO_NAME = 'frozen'
@@ -71,6 +72,7 @@ def styles():
 @app.route('/pygments.css')
 def pygments_css():
     return pygments_style_defs('tango'), 200, {'Content-Type': 'text/css'}
+
 
 if __name__ == '__main__':
     if len(sys.argv) > 1 and sys.argv[1] == "build":
