@@ -1,6 +1,7 @@
 title: Do It Anyways
+date: 2014-02-14
 tags: [hackathon]
-
+description: "Fun at a hackathon"
 
 So you have a really cool idea for an app, game, or solution to a problem. You get super pumped about it and start researching your idea, then the unexpected happens. You find out that somebody else has came up with the same idea and they have already produced it. This is always a downer and I am sure that everybody has felt this at least once in their life. Being a developer this has happened to me more than once, ranging from ideas about websites to potential phone apps.
 

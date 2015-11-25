@@ -1,6 +1,7 @@
 title: My Life In Tech
 tags: [life, tech, about]
-
+date: 2013-12-27
+description: "What this blog is about"
 ### Woot Woot!! First post using jekyll
 
 This is my first post to this site and hopefully there will be a zillion to follow it. I am going to start writing about my life experiences. Whatever it may be such as technology, life, the world, what I have done, what I want to do , or just whatever I am thinking about at the moment. I want it to be a way for me to express myself, a way for me to build relationships with other people, a way to promote myself, a way to learn about myself, and a way for me to learn about other things. My interest in things are constantly changing from day to day, I have many hobbies and the list of them keep growing as time passes. I plan on writing at least one post each week but as life happens we will see how that goes.

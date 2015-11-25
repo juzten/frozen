@@ -1,6 +1,7 @@
-title: code
+title: "code"
 date: 2015-11-23 12:00:00
 tags: [code, python]
+description: "Example of writting code with markdown"
 
 **Code**, go *where*?
 
