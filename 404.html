@@ -9,12 +9,23 @@
   <main role="main">
     <h1><a href="/">My site</a></h1>
     
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+<script src="/static/raptor/jquery.raptorize.1.0.js"></script>
+<script type="text/javascript">
+  $(window).load(function() {
+    $('.button').raptorize({
+      'enterOn' : 'timer',
+      'delayTime' : 2000,
+    });
+    $("#raptors").css("color", "red").fadeIn(6000);
+  });
+</script> 
   <div class="container">
     <div class="form-fields paper-area">
       <h2>Oh Snap!</h2>
-      <p>
-        No turtles here...
-      </p>
+        <h2>No turtles here...</h2>
+        <h1 id="raptors" style="display:none;">Only Raptors!!!</h1>
+        <a href="#" class="button"></a>
     </div>
   </div>
 
