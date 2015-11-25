@@ -56,6 +56,14 @@ def tag(tag):
     tagged = [p for p in pages if tag in p.meta.get('tags', [])]
     return render_template('tag.html', pages=tagged, tag=tag)
 
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template('404.html'), 404
+
+@app.route('/404.html')
+def static_404():
+    return render_template('404.html')
+
 @app.route('/styles')
 def styles():
     return render_template('styles.html', pages=pages)
