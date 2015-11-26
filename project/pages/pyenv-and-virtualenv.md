@@ -25,6 +25,14 @@ Add these lines to the end of your .zshrc/.bashrc
     # auto ativate virtualenv for pyenv
     if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
 
+    # python virtual env
+    if [ -z ${VIRTUAL_ENV+x} ]
+    then
+    VENV_NOTICE=""
+    else
+    VENV_NOTICE=" (py: $(basename "$VIRTUAL_ENV"))"
+    fi
+
 #### Pyenv Commands
 
 List all python versions downloaded

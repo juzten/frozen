@@ -23,14 +23,22 @@ brew install pyenv-virtualenv
 
 
 <p>Add these lines to the end of your .zshrc/.bashrc</p>
-<div class="codehilite"><pre><span class="err">#</span><span class="x"> set paths</span>
-<span class="x">export PATH=/usr/local/bin:</span><span class="p">$</span><span class="nv">PATH</span><span class="x"></span>
-<span class="x">export PYENV_ROOT=&quot;</span><span class="p">$</span><span class="nv">HOME</span><span class="x">/.pyenv&quot;</span>
-<span class="x">export PATH=&quot;</span><span class="p">$</span><span class="nv">PYENV_ROOT</span><span class="x">/bin:</span><span class="p">$</span><span class="nv">PATH</span><span class="x">&quot;</span>
-<span class="err">#</span><span class="x"> initialize pyenv on terminal load</span>
-<span class="x">eval &quot;</span><span class="p">$(</span><span class="err">pyenv</span> <span class="err">init</span> <span class="err">-</span><span class="p">)</span><span class="x">&quot;</span>
-<span class="err">#</span><span class="x"> auto ativate virtualenv for pyenv</span>
-<span class="x">if which pyenv-virtualenv-init &gt; /dev/null; then eval &quot;</span><span class="p">$(</span><span class="err">pyenv</span> <span class="err">virtualenv-init</span> <span class="err">-</span><span class="p">)</span><span class="x">&quot;; fi</span>
+<div class="codehilite"><pre># set paths
+export PATH=/usr/local/bin:<span class="nv">$PATH</span>
+export PYENV_ROOT=&quot;<span class="nv">$HOME</span>/.pyenv&quot;
+export PATH=&quot;<span class="nv">$PYENV_ROOT</span>/bin:<span class="nv">$PATH</span>&quot;
+# initialize pyenv on terminal load
+eval &quot;$(pyenv init -)&quot;
+# auto ativate virtualenv for pyenv
+if which pyenv-virtualenv-init &gt; /dev/null; then eval &quot;$(pyenv virtualenv-init -)&quot;; fi
+
+# python virtual env
+if [ -z <span class="cp">${</span><span class="n">VIRTUAL_ENV</span><span class="o">+</span><span class="n">x</span><span class="cp">}</span> ]
+then
+VENV_NOTICE=&quot;&quot;
+else
+VENV_NOTICE=&quot; (py: $(basename &quot;<span class="nv">$VIRTUAL_ENV</span>&quot;))&quot;
+fi
 </pre></div>
 
 
