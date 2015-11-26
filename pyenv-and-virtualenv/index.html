@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="/static/css/style.css" type="text/css" />
+  <title>My site</title>
+</head>
+<body>
+  <main role="main">
+    <h1><a href="/">My site</a></h1>
+    
+  <div class="container">
+    <div class="form-fields paper-area">
+      <h2>Setting up Pyenv and Pyenv-virtualenv</h2>
+      <hr>
+      <p>I want to start using python 3 but can't give up python 2.7 because of other project that rely on it. I've had a few people mention that I should use pyenv for virtual environments in the past but I didn't feel like learning another tool. Now that I want to give python 3 a try I searched around on different ways to have more than one python version on a system and Pyenv was mentioned a lot. Since I've been in the mood to try to document how I install tools, utilize tools, pickup new techniques, etc.. I felt this is a great opportunity to both document and write a quick article about it. </p>
+<h4>Installation and setup on <em>mac with homebrew</em></h4>
+<div class="codehilite"><pre>brew update
+brew install pyenv
+brew install pyenv-virtualenv
+</pre></div>
+
+
+<p>Add these lines to the end of your .zshrc/.bashrc</p>
+<div class="codehilite"><pre><span class="err">#</span><span class="x"> set paths</span>
+<span class="x">export PATH=/usr/local/bin:</span><span class="p">$</span><span class="nv">PATH</span><span class="x"></span>
+<span class="x">export PYENV_ROOT=&quot;</span><span class="p">$</span><span class="nv">HOME</span><span class="x">/.pyenv&quot;</span>
+<span class="x">export PATH=&quot;</span><span class="p">$</span><span class="nv">PYENV_ROOT</span><span class="x">/bin:</span><span class="p">$</span><span class="nv">PATH</span><span class="x">&quot;</span>
+<span class="err">#</span><span class="x"> initialize pyenv on terminal load</span>
+<span class="x">eval &quot;</span><span class="p">$(</span><span class="err">pyenv</span> <span class="err">init</span> <span class="err">-</span><span class="p">)</span><span class="x">&quot;</span>
+<span class="err">#</span><span class="x"> auto ativate virtualenv for pyenv</span>
+<span class="x">which pyenv-virtualenv-init &gt; /dev/null; then eval &quot;</span><span class="p">$(</span><span class="err">pyenv</span> <span class="err">virtualenv-init</span> <span class="err">-</span><span class="p">)</span><span class="x">&quot;; fi</span>
+</pre></div>
+
+
+<h4>Pyenv Commands</h4>
+<p>List all python versions downloaded</p>
+<div class="codehilite"><pre>pyenv versions
+</pre></div>
+
+
+<p>View what python version is currently activated</p>
+<div class="codehilite"><pre>pyenv version
+</pre></div>
+
+
+<p>View what python version is set to global</p>
+<div class="codehilite"><pre>pyenv global
+</pre></div>
+
+
+<p>Install python version 2.7.8 or any python version</p>
+<div class="codehilite"><pre>pyenv install 2.7.8
+</pre></div>
+
+
+<p>Rehash after instaling any python version</p>
+<div class="codehilite"><pre>pyenv rehash
+</pre></div>
+
+
+<p>Set global python version</p>
+<div class="codehilite"><pre>pyenv global 2.7.8
+</pre></div>
+
+
+<p>Set python version for current directory
+This also creates a .python-version in current directory</p>
+<div class="codehilite"><pre>pyenv local 3.5.0
+</pre></div>
+
+
+<h4>Pyenv-virtualenv Commands</h4>
+<p>Create virtualenv with python version 2.7.8 and name the env project_name</p>
+<div class="codehilite"><pre>pyenv virtualenv 2.7.8 project_name
+pyenv virtualenv [pyenv-version] [virtualenv-name]
+</pre></div>
+
+
+<p>List virtualenvs already created, also shows py version for each env</p>
+<div class="codehilite"><pre>pyenv virtualenvs
+</pre></div>
+
+
+<p>Activate a virtualenv from one thats already made</p>
+<div class="codehilite"><pre>pyenv local venv_name
+</pre></div>
+
+
+<p>Deactivate a virtualenv</p>
+<div class="codehilite"><pre>pyenv deactivate
+</pre></div>
+
+
+<h4>Pyenv and Pyenv-virtualenv Commands</h4>
+<p>Remove a Python version or virtualenv</p>
+<div class="codehilite"><pre>pyenv uninstall &lt;virtualenv or python-version&gt;
+</pre></div>
+
+
+<h4>Notable  Links</h4>
+<p>https://godjango.com/96-django-and-python-3-how-to-setup-pyenv-for-multiple-pythons/</p>
+<p>https://www.brianthicks.com/2015/04/10/pyenv-your-python-environment-automated/</p>
+<p>http://fgimian.github.io/blog/2014/04/20/better-python-version-and-environment-management-with-pyenv/</p>
+<p>http://blog.froehlichundfrei.de/2014/11/30/my-transition-to-python3-and-pyenv-goodby-virtualenvwrapper.html</p>
+<p>http://tbb.co/managing-python-on-os-x-with-pyenv/</p>
+    </div>
+  </div>
+
+  </main>
+</body>
+</html>

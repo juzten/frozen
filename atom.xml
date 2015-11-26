@@ -7,6 +7,17 @@
   <link href="blog.juzten.com/atom.xml" rel="self" />
   <generator>Werkzeug</generator>
   <entry xml:base="blog.juzten.com/atom.xml">
+    <title type="text">Setting up Pyenv and Pyenv-virtualenv</title>
+    <id>blog.juzten.com/pyenv-and-virtualenv</id>
+    <updated>2015-11-25T00:00:00Z</updated>
+    <published>2015-11-25T00:00:00Z</published>
+    <link href="blog.juzten.com/pyenv-and-virtualenv" />
+    <author>
+      <name>juzten</name>
+    </author>
+    <summary type="html">Installing and using Pyenv and Pyenv-virtualenv</summary>
+  </entry>
+  <entry xml:base="blog.juzten.com/atom.xml">
     <title type="text">code</title>
     <id>blog.juzten.com/code</id>
     <updated>2015-11-25T00:00:00Z</updated>
