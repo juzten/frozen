@@ -16,12 +16,16 @@
     <div class="form-fields paper-area">
       <h2>List of stuff</h2>
       
-        <ul>
+        <ul class="pages-list">
 
     <li>
         <a href="/my-life-in-tech/">My Life In Tech</a>
     
-        | Tagged:
+        <br>What this blog is about
+    
+    <!-- 
+        <br>
+        Tagged:
         
             <a href="/tag/life/">life</a>
         
@@ -30,13 +34,18 @@
             <a href="/tag/about/">about</a>
         
         <hr>
-    
+     -->
+        <hr>
     </li>
 
     <li>
         <a href="/chatype-all-the-things/">Chatype All The Things</a>
     
-        | Tagged:
+        <br>Encounters with building chrome extensions
+    
+    <!-- 
+        <br>
+        Tagged:
         
             <a href="/tag/chatype/">chatype</a>
         
@@ -49,26 +58,36 @@
             <a href="/tag/extension/">extension</a>
         
         <hr>
-    
+     -->
+        <hr>
     </li>
 
     <li>
         <a href="/code/">code</a>
     
-        | Tagged:
+        <br>Example of writting code with markdown
+    
+    <!-- 
+        <br>
+        Tagged:
         
             <a href="/tag/code/">code</a>
         
             <a href="/tag/python/">python</a>
         
         <hr>
-    
+     -->
+        <hr>
     </li>
 
     <li>
         <a href="/pyenv-and-virtualenv/">Setting up Pyenv and Pyenv-virtualenv</a>
     
-        | Tagged:
+        <br>Installing and using Pyenv and Pyenv-virtualenv
+    
+    <!-- 
+        <br>
+        Tagged:
         
             <a href="/tag/pyenv/">pyenv</a>
         
@@ -77,18 +96,24 @@
             <a href="/tag/virtualenv/">virtualenv</a>
         
         <hr>
-    
+     -->
+        <hr>
     </li>
 
     <li>
         <a href="/do-it-anyways/">Do It Anyways</a>
     
-        | Tagged:
+        <br>Fun at a hackathon
+    
+    <!-- 
+        <br>
+        Tagged:
         
             <a href="/tag/hackathon/">hackathon</a>
         
         <hr>
-    
+     -->
+        <hr>
     </li>
 
 </ul>

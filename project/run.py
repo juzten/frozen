@@ -49,7 +49,7 @@ app.config['FLATPAGES_HTML_RENDERER'] = prerender_jinja
 
 @app.route('/')
 def index():
-    return render_template('index.html', pages=pages)
+    return render_template('index.html', pages=page_list(pages))
 
 @app.route('/<path:path>/')
 def page(path):
@@ -112,4 +112,4 @@ if __name__ == '__main__':
     if len(sys.argv) > 1 and sys.argv[1] == "build":
         freezer.freeze()
     else:
-        app.run(port=5000)
+        app.run(port=5000, debug=True)
