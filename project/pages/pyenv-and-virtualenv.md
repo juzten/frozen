@@ -6,6 +6,8 @@ description: "Installing and using Pyenv and Pyenv-virtualenv"
 
 I want to start using python 3 but can't give up python 2.7 because of other project that rely on it. I've had a few people mention that I should use pyenv for virtual environments in the past but I didn't feel like learning another tool. Now that I want to give python 3 a try I searched around on different ways to have more than one python version on a system and Pyenv was mentioned a lot. Since I've been in the mood to try to document how I install tools, utilize tools, pickup new techniques, etc.. I felt this is a great opportunity to both document and write a quick article about it. 
 
+Enter: [pyenv](https://github.com/yyuu/pyenv) and [pyenv-virtualenv](https://github.com/yyuu/pyenv-virtualenv)
+
 #### Installation and setup on *mac with homebrew*
 
     brew update
