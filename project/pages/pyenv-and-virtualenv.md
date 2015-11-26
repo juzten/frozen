@@ -23,7 +23,7 @@ Add these lines to the end of your .zshrc/.bashrc
     # initialize pyenv on terminal load
     eval "$(pyenv init -)"
     # auto ativate virtualenv for pyenv
-    which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
+    if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
 
 #### Pyenv Commands
 
