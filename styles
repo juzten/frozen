@@ -19,19 +19,37 @@
         <ul class="pages-list">
 
     <li>
-        <a href="/my-life-in-tech/">My Life In Tech</a>
+        <a href="/for-loop-or-none/">For Loop or None</a>
     
-        <br>What this blog is about
+        <br>Handling when a variable is None instead of a list in a for loop in Python
     
     <!-- 
         <br>
         Tagged:
         
-            <a href="/tag/life/">life</a>
+            <a href="/tag/for%20loop/">for loop</a>
         
-            <a href="/tag/tech/">tech</a>
+            <a href="/tag/python/">python</a>
         
-            <a href="/tag/about/">about</a>
+            <a href="/tag/sqlalchemy/">sqlalchemy</a>
+        
+        <hr>
+     -->
+        <hr>
+    </li>
+
+    <li>
+        <a href="/code/">code</a>
+    
+        <br>Example of writting code with markdown
+    
+    <!-- 
+        <br>
+        Tagged:
+        
+            <a href="/tag/code/">code</a>
+        
+            <a href="/tag/python/">python</a>
         
         <hr>
      -->
@@ -63,17 +81,15 @@
     </li>
 
     <li>
-        <a href="/code/">code</a>
+        <a href="/do-it-anyways/">Do It Anyways</a>
     
-        <br>Example of writting code with markdown
+        <br>Fun at a hackathon
     
     <!-- 
         <br>
         Tagged:
         
-            <a href="/tag/code/">code</a>
-        
-            <a href="/tag/python/">python</a>
+            <a href="/tag/hackathon/">hackathon</a>
         
         <hr>
      -->
@@ -101,15 +117,19 @@
     </li>
 
     <li>
-        <a href="/do-it-anyways/">Do It Anyways</a>
+        <a href="/my-life-in-tech/">My Life In Tech</a>
     
-        <br>Fun at a hackathon
+        <br>What this blog is about
     
     <!-- 
         <br>
         Tagged:
         
-            <a href="/tag/hackathon/">hackathon</a>
+            <a href="/tag/life/">life</a>
+        
+            <a href="/tag/tech/">tech</a>
+        
+            <a href="/tag/about/">about</a>
         
         <hr>
      -->
