@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="/static/css/style.css" type="text/css" />
+  <title>My site</title>
+</head>
+<body>
+  <main role="main">
+    <h1><a href="/">My site</a></h1>
+    
+  <div class="container">
+    <div class="form-fields paper-area">
+      <h2>Python&#39;s ftp library</h2>
+      <hr>
+      <p>I recently worked on a project where I needed to download a csv file from a remote ftp server periodically so I could use the file in the rest of the project. After doing some digging, I found out that python has a built in library to do some ftp operations. Here is a function I'm using to download a file using python's ftplib library.</p>
+<div class="codehilite"><pre><span class="kn">from</span> <span class="nn">ftplib</span> <span class="kn">import</span> <span class="n">FTP</span>
+
+<span class="k">def</span> <span class="nf">download_file_from_ftp_server</span><span class="p">(</span><span class="n">filename</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Download file from ftp server.&quot;&quot;&quot;</span>
+    <span class="n">ftp</span> <span class="o">=</span> <span class="n">FTP</span><span class="p">()</span>
+    <span class="n">ftp</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s">&quot;websitename.com&quot;</span><span class="p">,</span> <span class="mi">5000</span><span class="p">)</span>
+    <span class="n">ftp</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="s">&quot;username&quot;</span><span class="p">,</span> <span class="s">&quot;very_secure_password&quot;</span><span class="p">)</span>
+    <span class="n">localfile</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s">&#39;wb&#39;</span><span class="p">)</span>
+    <span class="n">ftp</span><span class="o">.</span><span class="n">retrbinary</span><span class="p">(</span><span class="s">&#39;RETR &#39;</span> <span class="o">+</span> <span class="n">filename</span><span class="p">,</span> <span class="n">localfile</span><span class="o">.</span><span class="n">write</span><span class="p">,</span> <span class="mi">1024</span><span class="p">)</span>
+    <span class="n">ftp</span><span class="o">.</span><span class="n">quit</span><span class="p">()</span>
+    <span class="n">localfile</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+
+
+<p>If the file is at the root of the webserver, then you can pass in the exact file name you want to grab. If the file is in another directory, you can pass in the directory structure to the file and the file name such as <code>reports/monday/logs.csv</code>.</p>
+<p>This function connects and logs in to the ftp server, reads the file on the server and writes it to the local file system. It also handles closing the ftp connection and the local file after it has been created.</p>
+    </div>
+  </div>
+
+  </main>
+</body>
+</html>

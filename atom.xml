@@ -18,6 +18,17 @@
     <summary type="html">Handling when a variable is None instead of a list in a for loop in Python</summary>
   </entry>
   <entry xml:base="blog.juzten.com/atom.xml">
+    <title type="text">Python's ftp library</title>
+    <id>blog.juzten.com/ftp-file-download-with-python</id>
+    <updated>2016-05-14T00:00:00Z</updated>
+    <published>2016-05-14T00:00:00Z</published>
+    <link href="blog.juzten.com/ftp-file-download-with-python" />
+    <author>
+      <name>juzten</name>
+    </author>
+    <summary type="html">Downloading a file using Python's built in ftp library</summary>
+  </entry>
+  <entry xml:base="blog.juzten.com/atom.xml">
     <title type="text">Setting up Pyenv and Pyenv-virtualenv</title>
     <id>blog.juzten.com/pyenv-and-virtualenv</id>
     <updated>2015-11-25T00:00:00Z</updated>

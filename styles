@@ -81,6 +81,26 @@
     </li>
 
     <li>
+        <a href="/ftp-file-download-with-python/">Python&#39;s ftp library</a>
+    
+        <br>Downloading a file using Python&#39;s built in ftp library
+    
+    <!-- 
+        <br>
+        Tagged:
+        
+            <a href="/tag/for%20loop/">for loop</a>
+        
+            <a href="/tag/python/">python</a>
+        
+            <a href="/tag/sqlalchemy/">sqlalchemy</a>
+        
+        <hr>
+     -->
+        <hr>
+    </li>
+
+    <li>
         <a href="/do-it-anyways/">Do It Anyways</a>
     
         <br>Fun at a hackathon
