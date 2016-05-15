@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="/static/css/style.css" type="text/css" />
+  <title>My site</title>
+</head>
+<body>
+  <main role="main">
+    <h1><a href="/">My site</a></h1>
+    
+  <div class="container">
+    <div class="form-fields paper-area">
+      <h2>Reading data from a csv file in python</h2>
+      <hr>
+      <p>This is a common function that I use in my code when reading in data from a csv file with python.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23</pre></div></td><td class="code"><div class="codehilite"><pre><span class="c">#!/usr/bin/env python</span>
+<span class="c"># -*- coding: utf-8 -*-</span>
+
+<span class="kn">import</span> <span class="nn">csv</span>
+
+<span class="k">def</span> <span class="nf">get_contacts_from_csv</span><span class="p">(</span><span class="n">directory</span><span class="p">):</span>
+    <span class="n">contacts</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">if</span> <span class="n">directory</span><span class="p">:</span>
+        <span class="n">csv_location</span> <span class="o">=</span> <span class="n">directory</span> <span class="o">+</span> <span class="s">&#39;/contacts.csv&#39;</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">csv_location</span> <span class="o">=</span> <span class="s">&#39;contacts.csv&#39;</span>
+
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">csv_location</span><span class="p">,</span> <span class="s">&#39;rU&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+        <span class="n">reader</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">reader</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">reader</span><span class="p">:</span>
+            <span class="n">contacts</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">row</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">row</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">row</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">row</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">lower</span><span class="p">()])</span>
+    <span class="c"># remove header row if it exists.</span>
+    <span class="k">if</span> <span class="n">contacts</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s">&#39;user_login&#39;</span><span class="p">:</span>
+        <span class="k">del</span> <span class="n">contacts</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="k">return</span> <span class="n">contacts</span>
+
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="n">contacts_from_csv</span> <span class="o">=</span> <span class="n">get_staff_from_csv</span><span class="p">(</span><span class="s">&#39;home/juzten&#39;</span><span class="p">)</span>
+</pre></div>
+</td></tr></table>
+
+<p>This works really well, I can even update the function to take in a file name if I had the need to read multiple files. In line 19 I'm checking if the first row is a header by checking if the first item is the contacts list is equal to what would normally be in the first row and column of the csv file, in this case it would be 'user_login' so I'm deleting that item in the contacts list. I could also skip the first row while reading in the csv but in this case I did not do that.</p>
+    </div>
+  </div>
+
+  </main>
+</body>
+</html>
