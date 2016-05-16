@@ -101,15 +101,19 @@
     </li>
 
     <li>
-        <a href="/do-it-anyways/">Do It Anyways</a>
+        <a href="/my-life-in-tech/">My Life In Tech</a>
     
-        <br>Fun at a hackathon
+        <br>What this blog is about
     
     <!-- 
         <br>
         Tagged:
         
-            <a href="/tag/hackathon/">hackathon</a>
+            <a href="/tag/life/">life</a>
+        
+            <a href="/tag/tech/">tech</a>
+        
+            <a href="/tag/about/">about</a>
         
         <hr>
      -->
@@ -137,6 +141,24 @@
     </li>
 
     <li>
+        <a href="/list-to-string/">Converting a list to a string in python</a>
+    
+        <br>Convertin a list of strings to a single string in python
+    
+    <!-- 
+        <br>
+        Tagged:
+        
+            <a href="/tag/python/">python</a>
+        
+            <a href="/tag/csv/">csv</a>
+        
+        <hr>
+     -->
+        <hr>
+    </li>
+
+    <li>
         <a href="/read-from-csv/">Reading data from a csv file in python</a>
     
         <br>Reading data from a csv file in python
@@ -155,19 +177,15 @@
     </li>
 
     <li>
-        <a href="/my-life-in-tech/">My Life In Tech</a>
+        <a href="/do-it-anyways/">Do It Anyways</a>
     
-        <br>What this blog is about
+        <br>Fun at a hackathon
     
     <!-- 
         <br>
         Tagged:
         
-            <a href="/tag/life/">life</a>
-        
-            <a href="/tag/tech/">tech</a>
-        
-            <a href="/tag/about/">about</a>
+            <a href="/tag/hackathon/">hackathon</a>
         
         <hr>
      -->

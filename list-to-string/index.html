@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="/static/css/style.css" type="text/css" />
+  <title>My site</title>
+</head>
+<body>
+  <main role="main">
+    <h1><a href="/">My site</a></h1>
+    
+  <div class="container">
+    <div class="form-fields paper-area">
+      <h2>Converting a list to a string in python</h2>
+      <hr>
+      <p>Here I am converting a list of strings to a single string and placing a comma between each item in the new string.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="codehilite"><pre><span class="c">#!/usr/bin/env python</span>
+<span class="c"># -*- coding: utf-8 -*-</span>
+
+<span class="c"># convert list to string with removed []</span>
+<span class="n">LIST</span> <span class="o">=</span> <span class="p">[</span><span class="s">&#39;first&#39;</span><span class="p">,</span> <span class="s">&#39;second&#39;</span><span class="p">,</span> <span class="s">&#39;third&#39;</span><span class="p">,</span> <span class="s">&#39;fourth&#39;</span><span class="p">]</span>
+<span class="n">str_list</span> <span class="o">=</span> <span class="p">(</span><span class="s">&quot;, &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">LIST</span><span class="p">))</span>
+</pre></div>
+</td></tr></table>
+
+<p>This is the output:</p>
+<div class="codehilite"><pre>print str_list
+&gt;&gt; &#39;first, second, third, fourth
+</pre></div>
+    </div>
+  </div>
+
+  </main>
+</body>
+</html>
