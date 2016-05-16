@@ -1,7 +1,7 @@
 title: "Converting a list to a string in python"
 tags: [python, csv]
-date: 2016-05-14
-lastmod: 2016-05-14
+date: 2016-05-16
+lastmod: 2016-05-16
 description: "Convertin a list of strings to a single string in python"
 
 Here I am converting a list of strings to a single string and placing a comma between each item in the new string.

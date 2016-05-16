@@ -2,10 +2,21 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title type="text">Recent Blog Postings</title>
   <id>blog.juzten.com/atom.xml</id>
-  <updated>2016-05-14T00:00:00Z</updated>
+  <updated>2016-05-16T00:00:00Z</updated>
   <link href="blog.juzten.com" />
   <link href="blog.juzten.com/atom.xml" rel="self" />
   <generator>Werkzeug</generator>
+  <entry xml:base="blog.juzten.com/atom.xml">
+    <title type="text">Converting a list to a string in python</title>
+    <id>blog.juzten.com/list-to-string</id>
+    <updated>2016-05-16T00:00:00Z</updated>
+    <published>2016-05-16T00:00:00Z</published>
+    <link href="blog.juzten.com/list-to-string" />
+    <author>
+      <name>juzten</name>
+    </author>
+    <summary type="html">Convertin a list of strings to a single string in python</summary>
+  </entry>
   <entry xml:base="blog.juzten.com/atom.xml">
     <title type="text">For Loop or None</title>
     <id>blog.juzten.com/for-loop-or-none</id>
@@ -27,17 +38,6 @@
       <name>juzten</name>
     </author>
     <summary type="html">Downloading a file using Python's built in ftp library</summary>
-  </entry>
-  <entry xml:base="blog.juzten.com/atom.xml">
-    <title type="text">Converting a list to a string in python</title>
-    <id>blog.juzten.com/list-to-string</id>
-    <updated>2016-05-14T00:00:00Z</updated>
-    <published>2016-05-14T00:00:00Z</published>
-    <link href="blog.juzten.com/list-to-string" />
-    <author>
-      <name>juzten</name>
-    </author>
-    <summary type="html">Convertin a list of strings to a single string in python</summary>
   </entry>
   <entry xml:base="blog.juzten.com/atom.xml">
     <title type="text">Reading data from a csv file in python</title>
